@@ -60,7 +60,7 @@ where.exe link   # should resolve to an MSVC link.exe
 ### Compile
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/jp2-winthumb
+git clone https://github.com/MutantKiwi/jp2-winthumb
 cd jp2-winthumb
 cargo build --release
 ```
@@ -155,7 +155,7 @@ When built with `cargo build` (without `--release`), the DLL writes trace logs t
 
 ## Companion: standalone viewer
 
-Pairs with **[jp2-viewer](https://github.com/YOUR_USERNAME/jp2-viewer)** — a Python viewer for when you want more than a thumbnail. Zoom, pan, rotate, geo coord readout.
+Pairs with **[jp2-viewer](https://github.com/MutantKiwi/jp2-viewer)** — a Python viewer for when you want more than a thumbnail. Zoom, pan, rotate, geo coord readout.
 
 ## License
 
