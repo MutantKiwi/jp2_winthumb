@@ -8,7 +8,8 @@ Windows has no native JPEG 2000 support — `.jp2` files show up as generic icon
 
 Because it's a WIC decoder (not a direct thumbnail provider), thumbnails work *everywhere* Windows uses WIC: Explorer's folder view and preview pane, the system file picker, and any third-party app built against WIC.
 
-![screenshot placeholder — drop a PNG called `screenshot.png` showing Explorer with JP2 thumbnails](screenshot.png)
+<img width="290" height="491" alt="image" src="https://github.com/user-attachments/assets/5dfe21f4-eca3-40b0-9890-9ffad4a0fa29" />
+
 
 ## Credits
 
