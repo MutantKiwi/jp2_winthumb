@@ -1,4 +1,5 @@
 # jp2-winthumb
+[![Download DLL](https://img.shields.io/github/v/release/YOUR_USERNAME/jp2-winthumb?label=Download%20DLL)](https://github.com/MutantKiwi/jp2-winthumb/releases/latest)
 
 A Windows WIC decoder that makes File Explorer render thumbnails for JPEG 2000 (`.jp2`) files. Also makes JP2 images viewable in any WIC-capable Windows app (Photos, Paint, Print Preview, etc.).
 
