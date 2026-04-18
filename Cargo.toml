@@ -1,0 +1,37 @@
+[package]
+name = "jp2-winthumb"
+version = "0.1.0"
+authors = ["adapted from jxl-winthumb by Kagami Sascha Rosylight"]
+edition = "2024"
+
+[lib]
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+simple-logging = "2.0.2"
+log = "0.4.27"
+windows-core = "0.58.0"
+winreg = "0.52.0"
+# JPEG 2000 decoder (wraps OpenJPEG). The "image" feature enables the
+# TryFrom<&Image> for image::DynamicImage conversion we use below.
+# 0.10 adds orig_width/orig_height and DecodeParameters::reduce, both
+# needed for the two-pass pyramid decode.
+jpeg2k = { version = "0.10", features = ["image"] }
+image = { version = "0.25", default-features = false }
+
+[dependencies.windows]
+version = "0.58.0"
+features = [
+  "implement",
+  "Win32_Graphics_Imaging",
+  "Win32_Foundation",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_LibraryLoader",
+  "Win32_System_SystemServices",
+  "Win32_UI_Shell",
+  "Win32_UI_Shell_PropertiesSystem",
+]
+
+[build-dependencies]
+winresource = "0.1.23"
